@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+<main class="form-signin" style="width: 100%;max-width: 430px;padding: 15px;margin: auto;">
+    {% for book in books %}
+    <h1>Titulo: <small>{{ book.titulo }}</small></h1>
+    <h2>Autor: <small>{{ book.autor }}</small></h2>
+    <h2>Año: <small>{{ book.año }}</small></h2>
+    <h2>Código: <small>{{ book.id }}</small></h2>
+    <h2>Materia: <small>{{ book.materia }}</small></h2>
+    {% endfor %}
+</main>
+
+{% endblock %}
